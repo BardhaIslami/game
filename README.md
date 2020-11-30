@@ -39,10 +39,13 @@ Functional programming approach was used to implement all the features. The goal
 Game is implemented in three parts: application controller, main game, and server. To connect controller to server streams are used. Messages are also broadcasted to all connected users. TCP/IP is used for network transfer protocol, and plain strings are used for message protocol.  
 
 The application works like this:
+
 ADD_PLAYER: playerA
 Added player playerA to game.
+
 ADD_AUTOMATIC_PLAYER
 Added Automatic player to game.
+
 START_GAME
 Game started with number 61. playerA is next in turn.
 0 
