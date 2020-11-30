@@ -3,7 +3,7 @@ Goal
 The Goal is to implement a game with two independent units – the players –
 communicating with each other using an API.
 
-Description
+Description:
 When a player starts, it incepts a random (whole) number and sends it to the second
 player as an approach of starting the game. The receiving player can now always choose
 between adding one of { 1, 0, 1} to get to a number that is divisible by 3. Divide it by three. The
@@ -28,11 +28,11 @@ LEAVE_GAME - leave the game
 
 Note: adding two automatic players is also possible.
 
-Implementation
+Implementation:
 The main game is also divided in modules: the base main game module which holds the general game and player information and the game moves package which processes input and output. It has its own actions(domain), play and win logic, validators, it's a separate replaceable module. 
 The game architecture is very flexible. Converting this game to another one all you need to do is replace the independent classes that cover actions, winning logic and game logic.
 
-Business domains defined as player information, input number, output number, game move input (input after each move), game move result (result after each move).
+Business domains defined: player information, input number, output number, game move input (input after each move), game move result (result after each move).
 Defined and implemented actions are: start new round with input number, check input number is within -1, 0 or 1, create output number with in range input -1, 0, 1 to make result divisible by three. Divide by three game logic, winning logic when output is one, adding real human players, adding automatic players, restarting game, playing with automatic player, letting two automatic players play together.
 Functional programming approach was used to implement all the features. The goal was to use more reusable codebase and immutable objects. Application design follows Domain-Driven-Design (DDD) with makes it easier to work with business people.
 
