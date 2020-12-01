@@ -20,12 +20,19 @@ Solution:
 Application covers all required features. 
 This game is implemented in Java and dependencies are Mockito, Junit, and log4j. 
 Requirements are java, maven, and tcp. 
+
 Game commands look like this:
+
 ADD_PLAYER: add a player
+
 ADD_AUTOMATIC_PLAYER - add automatic player
+
 START_GAME – Game must have two players to start (human or computer players)
+
 PLAY_GAME – numbers allowed to play -1, 0 or 1 
+
 GAME_STATUS – get current game state 
+
 LEAVE_GAME - leave the game
 
 Note: adding two automatic players is also possible.
